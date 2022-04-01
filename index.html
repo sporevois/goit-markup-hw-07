@@ -16,7 +16,7 @@
  <div class="header-container">
         <nav class="nav-group">
             <a href="#" class="header-logo">
-                <span class="colorized">Web</span>Studio
+                <span class="header-logo-colorized">Web</span>Studio
             </a>
             <ul class="site-nav">
                 <li class="site-nav__item"> 
@@ -342,59 +342,65 @@
 
 <!-- Footer -->
 <footer class="page-footer">
-    <div class="conteiner footer-blocks">
-        <div class="ftr-address-conteiner">
-            <a href="#" class="footer-logo link">
-                <span class="colorized">Web</span>Studio
+    <div class="footer-container">
+        <div class="ftr-address-wrapper">
+            <a href="#" class="footer-logo">
+                <span class="footer-logo-colorized">Web</span>Studio
             </a>
             <address class="footer-address">
                 <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="list">
-                    <li> <a href="mailto:info@devstudio.com" class="mail link">info@devstudio.com</a> </li>
-                    <li> <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a> </li>
+                <ul class="ftr-contact">
+                    <li class="ftr-contact__item"> 
+                        <a href="mailto:info@devstudio.com" class="ftr-contact__link">info@devstudio.com
+                        </a> 
+                    </li>
+                    <li class="ftr-contact__item"> 
+                        <a href="tel:+380961111111" class="ftr-contact__link">+38 096 111 11 11
+                        </a> 
+                    </li>
                 </ul>
             </address>
         </div>
-        <div class="ftr-socials-conteiner">
+        <div class="ftr-socials-wrapper">
             <p class="appeal">присоединяйтесь</p>
-            <ul class="list social-network">
-                <li class="soc-item">
-                    <a href="" class="ftr-soc-link">
-                      <svg class="ftr-link-icon">
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
                     </a>                    
                 </li>
-                <li class="soc-item">
-                    <a href="" class="ftr-soc-link">
-                      <svg class="ftr-link-icon">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
                     </a>                    
                 </li>
-                <li class="soc-item">
-                    <a href="" class="ftr-soc-link">
-                      <svg class="ftr-link-icon">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
                     </a>                    
                 </li>
-                <li class="soc-item">
-                    <a href="" class="ftr-soc-link">
-                      <svg class="ftr-link-icon">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>                    
                 </li>
             </ul>
         </div>
-        <form name="subsription_form" class="subsription_form">
-            <label for="user_mail">Подпишитесь на рассылку</label>
-            <div class="mail-submit-container">
-                <input type="email" name="mail" id="user_mail" placeholder="E-mail">
-                <button type="submit" class="submit-btn">
+        <form name="subscription" class="subscription">
+            <label for="user_mail" class="subcsription__title">Подпишитесь на рассылку</label>
+            <div class="signup">
+                <input type="email" name="mail" id="user_mail" class="signup__mail" placeholder="E-mail">
+                <button type="submit" class="button-primary">
                     Подписаться
-                    <svg class="send-icon">
+                    <svg class="signup-icon">
                         <use href="./images/sprite.svg#send"></use>
                     </svg>
                 </button>
