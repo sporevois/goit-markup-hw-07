@@ -84,13 +84,17 @@ svg {
 
 /* <<<<<< Page header >>>>> */
 
-.header-group {
+.header-container {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Logo */
-.header {
+.page-header {
   border-bottom: 1px solid var(--border-color);
 }
 .header-logo {
@@ -113,12 +117,14 @@ svg {
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin: 0 0 0 93px;
+  padding: 0;
+  list-style: none;
 }
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
-.site-nav .link {
+/* .site-nav .link {
   display: block;
   padding: 32px 0;
   color: var(--title-text-color);
@@ -129,16 +135,27 @@ svg {
   letter-spacing: 0.02em;
 
   transition: color var(--transitio-duration) var(--trasition-timing-function);
+} */
+.site-nav__link {
+  display: block;
+  padding: 32px 0;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color var(--transitio-duration) var(--trasition-timing-function);
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link.current {
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link--current {
   color: var(--current-item-color);
 }
 .site-nav__item {
   position: relative;
 }
-.site-nav__item .current::after {
+.site-nav__link--current::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -154,39 +171,36 @@ svg {
   display: flex;
   align-items: center;
   margin-left: auto;
+  list-style: none;
 }
-.contact .link {
-  display: flex;
-}
-.contact .item + .item {
+.contact__item + .contact__item {
   margin-left: 50px;
 }
-.contact .mail,
-.contact .tel {
+.contact__link {
+  display: flex;
   color: var(--primary-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  list-style: none;
+  text-decoration: none;
   transition: color var(--transitio-duration) var(--trasition-timing-function);
 }
-.address-icon {
+.contact__icon {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
-.envelope {
+.contact__icon--envelope {
   margin-right: 10px;
 }
-.phone {
+.contact__icon--phone {
   margin-right: 7px;
 }
 
-.contact .mail:hover,
-.contact .mail:focus,
-.contact .tel:hover,
-.contact .tel:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--current-item-color);
 }
 
