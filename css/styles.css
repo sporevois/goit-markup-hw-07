@@ -81,6 +81,23 @@ svg {
   margin-top: 0;
   color: var(--title-text-color);
 }
+.button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--current-item-color);
+  cursor: pointer;
+}
 
 /* <<<<<< Page header >>>>> */
 
@@ -315,23 +332,8 @@ svg {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.button-primary {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 200px;
-  height: 50px;
+.button-primary--footer {
   margin-left: 12px;
-  padding: 10px 28px 10px 29px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  color: var(--primary-white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  background-color: var(--current-item-color);
-  cursor: pointer;
 }
 .signup-icon {
   display: inline-block;
@@ -344,8 +346,7 @@ svg {
 
 /* Hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 15px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -356,11 +357,11 @@ svg {
   background-color: var(--reserv-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero_bg_img.jpg);
-
   color: var(--primary-white-color);
   text-align: center;
 }
-.hero-title {
+
+.hero__title {
   display: inline-block;
   max-width: 696px;
   margin: 0 auto;
@@ -373,24 +374,12 @@ svg {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.btn-hero {
-  display: flex;
-  padding: 10px 32px;
+.button-primary--hero {
   margin: 0 auto;
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--current-item-color);
-  cursor: pointer;
   transition: background-color var(--transitio-duration) var(--trasition-timing-function);
 }
-.btn-hero:hover,
-.btn-hero:focus {
+.button-primary--hero:hover,
+.button-primary--hero:focus {
   background-color: var(--btn-hover-color);
 }
 /* Our advantages */
