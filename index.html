@@ -408,61 +408,61 @@
 </footer>
 
 <!-- Modal Window -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop backdrop--is-hidden" data-modal>
     <div class="window">
-        <button class="close" data-modal-close></button>
+        <button class="window__close-button" data-modal-close></button>
         <form class="form" name="order__form">
             <div class="form__field">
-                <label for="client-name">Имя</label>
-                <div class="input__container">
+                <label class="form__field__lable" for="client-name">Имя</label>
+                <div class="input-wrapper">
                     <input
-                    class="form__input" 
+                    class="form__field__input" 
                     type="text"
                     name="client-name"
                     id="client-name">
-                    <svg class="form__icon">
+                    <svg class="form__field__icon">
                         <use href="./images/sprite.svg#person"></use>
                     </svg>
                 </div>
             </div>
             <div class="form__field">
-                <label for="phone-number">Телефон</label>
-                <div class="input__container">
+                <label class="form__field__lable" for="phone-number">Телефон</label>
+                <div class="input-wrapper">
                     <input
-                    class="form__input" 
+                    class="form__field__input" 
                     type="tel" 
                     name="phone-number"
                     id="phone-number">
-                    <svg class="form__icon">
+                    <svg class="form__field__icon">
                         <use href="./images/sprite.svg#phone"></use>
                     </svg>
                 </div>
             </div>
             <div class="form__field">
-                <label for="mail">Почта</label>
-                <div class="input__container">
+                <label class="form__field__lable" for="mail">Почта</label>
+                <div class="input-wrapper">
                     <input
-                    class="form__input" 
+                    class="form__field__input" 
                     type="email" 
                     name="mail"
                     id="mail">
-                    <svg class="form__icon">
+                    <svg class="form__field__icon">
                         <use href="./images/sprite.svg#email"></use>
                     </svg>
                 </div>
             </div> 
-            <div class="comment__container">
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
+            <div class="form__comment">
+                <label class="form__comment__lable" for="comment">Комментарий</label>
+                <textarea class="form__comment__textarea" name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
             </div>
-            <div class="checkbox__container">
-                <label class="checkbox__label">
-                    <input class="checkbox" type="checkbox" name="agreement" value="agree"/>
-                    <span class="icon__container"></span><span>Соглашаюсь с рассылкой и принимаю </span>
+            <div class="form__checkbox">
+                <label class="form__checkbox__label">
+                    <input class="form__checkbox__standart" type="checkbox" name="agreement" value="agree"/>
+                    <span class="form__checkbox__custom"></span><span>Соглашаюсь с рассылкой и принимаю</span>
                 </label>
-                <a class="contract-link" href=""> Условия договора</a>
+                <a class="form__checkbox__contract-link" href=""> Условия договора</a>
             </div>
-            <button type="submit" class="submit-btn">Отправить</button>
+            <button class="button-primary button-primary--modal-wind" type="submit">Отправить</button>
         </form>
     </div>
 </div>
