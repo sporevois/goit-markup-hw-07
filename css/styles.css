@@ -51,6 +51,7 @@ svg {
   /* outline: 2px solid red; */
 }
 .list {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -118,7 +119,6 @@ svg {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
-  text-decoration: none;
 }
 .header-logo-colorized {
   color: var(--current-item-color);
@@ -130,11 +130,8 @@ svg {
   align-items: center;
 }
 .site-nav {
-  display: flex;
-  margin: 0 0 0 93px;
-  padding: 0;
-  list-style: none;
-}
+  margin-left: 93px;
+ }
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
@@ -146,7 +143,6 @@ svg {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   transition: color var(--transitio-duration) var(--trasition-timing-function);
 }
 .site-nav__link:hover,
@@ -170,10 +166,8 @@ svg {
 
 /* Contact */
 .contact {
-  display: flex;
   align-items: center;
   margin-left: auto;
-  list-style: none;
 }
 .contact__item + .contact__item {
   margin-left: 50px;
@@ -186,7 +180,6 @@ svg {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  text-decoration: none;
   transition: color var(--transitio-duration) var(--trasition-timing-function);
 }
 .contact__icon {
@@ -229,30 +222,31 @@ svg {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
-  text-decoration: none;
 }
 .footer-logo-colorized {
   color: var(--current-item-color);
 }
 
 /* Address */
+
+.footer-address {
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+}
 .location {
   margin-bottom: 9px;
-  color: var(--primary-white-color);
-}
-.footer-address,
-.ftr-contact__link,
-.ftr-contact__link {
-  display: inline-block;
-  margin-left: auto;
-  color: var(--footer-adress-color);
   font-style: normal;
   line-height: 1.71;
-  text-decoration: none;
+  color: var(--primary-white-color);
 }
-.ftr-contact {
-  padding: 0;
-  list-style: none;
+.ftr-contact{
+  flex-flow: column;
+}
+.ftr-contact__link {
+font-style: normal;
+line-height: 1.71;
+color: var(--footer-adress-color);
 }
 .ftr-contact__link:hover,
 .ftr-contact__link:focus {
@@ -271,10 +265,7 @@ svg {
   color: var(--primary-white-color);
 }
 .socials {
-  display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0;
 }
 .socials__item + .socials__item {
   margin-left: 10px;
@@ -386,11 +377,7 @@ svg {
 }
 /* Our advantages */
 .advantage {
-  display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 .advantage__item {
   width: 270px;
@@ -431,11 +418,7 @@ svg {
   padding-top: 0;
 }
 .feature {
-  display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 .feature__item {
   position: relative;
@@ -468,12 +451,8 @@ svg {
   background-color: var(--dimm-bg-color);
 }
 .member {
-  display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+ }
 .member-wrapper {
   padding: 30px 0;
 }
@@ -509,12 +488,8 @@ svg {
 }
 /* Our Clients  */
 .client{
-  display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+ }
 .client__item + .client__item {
   margin-left: 30px;
 }
@@ -674,7 +649,6 @@ textarea:focus {
 }
 .contract-link {
   color: var(--current-item-color);
-  text-decoration: underline;
 }
 .form button {
   margin: 0 auto;
@@ -710,22 +684,20 @@ input[type='checkbox'] {
 /* <<<<< Page Portfolio >>>>> */
 
 /* Filter buttons */
-.button-list {
-  display: flex;
+.filter {
   justify-content: center;
   margin-bottom: 50px;
-}
-.button-list .item + .item {
+  }
+.filter__item + .filter__item {
   margin-left: 8px;
 }
-.filt-btn {
+.button-secondary {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
   color: var(--title-text-color);
   background-color: var(--dimm-bg-color);
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -733,14 +705,13 @@ input[type='checkbox'] {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-
   transition: background-color var(--transitio-duration) var(--trasition-timing-function),
     color var(--transitio-duration) var(--trasition-timing-function),
     box-shadow var(--transitio-duration) var(--trasition-timing-function);
 }
-.filt-btn:hover,
-.filt-btn:focus,
-.filt-btn.current {
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary--current {
   color: var(--primary-white-color);
   background-color: var(--current-item-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
