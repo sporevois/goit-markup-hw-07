@@ -108,11 +108,11 @@ svg {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* Logo */
 .page-header {
   border-bottom: 1px solid var(--border-color);
 }
+
+/* Logo */
 .header-logo {
   color: var(--title-text-color);
   font-family: Raleway;
@@ -132,6 +132,9 @@ svg {
 .site-nav {
   margin-left: 93px;
  }
+.site-nav__item {
+  position: relative;
+}
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
@@ -149,9 +152,6 @@ svg {
 .site-nav__link:focus,
 .site-nav__link--current {
   color: var(--current-item-color);
-}
-.site-nav__item {
-  position: relative;
 }
 .site-nav__link--current::after {
   content: '';
@@ -215,7 +215,6 @@ svg {
 }
 /* Logo */
 .footer-logo {
-  display: block;
   margin-bottom: 20px;
   color: var(--primary-white-color);
   font-family: Raleway;
