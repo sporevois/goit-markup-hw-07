@@ -4,16 +4,16 @@
     align-items: center;
 }
 .page-header {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid $border-color;
 }
 
 .header-logo{
     @extend %logo;
-    color: var(--title-text-color);
+    color: $title-text-color;
 }
 /* Header Logo */
 .header-logo-colorized {
-    color: var(--current-item-color);
+    color: $current-item-color;
 }
 /* Site nav */
 .nav-group {
@@ -27,25 +27,26 @@
     &__item {
         position: relative;
         
-        & + & 
+        & + & {
         margin-left: 50px;
+        }
     }
    
     &__link {
     @extend %link;
     display: block;
     padding: 32px 0;
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color var(--transitio-duration) var(--trasition-timing-function);
+    transition: color $transitio-duration $trasition-timing-function;
     
         &:hover,
         &:focus,
         &--current {
-        color: var(--current-item-color);
+        color: $current-item-color;
         }
 
         &--current::after {
@@ -56,7 +57,7 @@
             width: 100%;
             height: 4px;
             border-radius: 2px;
-            background-color: var(--current-item-color);
+            background-color: $current-item-color;
         }
     }
 }
@@ -67,24 +68,24 @@
     align-items: center;
     margin-left: auto;
   
-    &__item + .&__item {
+    &__item + &__item {
     margin-left: 50px;
     }
   
     &__link {
     @extend %link;
     display: flex;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style: none;
-    transition: color var(--transitio-duration) var(--trasition-timing-function);
+    transition: color $transitio-duration $trasition-timing-function;
     
         &:hover,
         &:focus {
-        color: var(--current-item-color);
+        color: $current-item-color;
         }
     }
   
