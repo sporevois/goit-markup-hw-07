@@ -58,6 +58,7 @@
     color: $primary-white-color;
   }
 .socials {
+    @extend %list;
     justify-content: center;
   
     &__item + &__item {

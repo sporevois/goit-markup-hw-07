@@ -6,7 +6,6 @@
 .page-header {
     border-bottom: 1px solid $border-color;
 }
-
 .header-logo{
     @extend %logo;
     color: $title-text-color;
@@ -20,18 +19,17 @@
     display: flex;
     align-items: center;
 }
-
 .site-nav {
     margin-left: 93px;
 
     &__item {
         position: relative;
-        
-        & + & {
-        margin-left: 50px;
-        }
     }
-   
+        
+    &__item + &__item {
+    margin-left: 50px;
+    }
+    
     &__link {
     @extend %link;
     display: block;
@@ -93,12 +91,14 @@
     width: 16px;
     height: 16px;
     fill: currentColor;
-      
-        &--envelope {
-        margin-right: 10px;
-        }
-        &--phone {
-         margin-right: 7px;
-        }
     }
+
+    &__icon--envelope {
+    margin-right: 10px;
+    }
+
+    &__icon--phone {
+     margin-right: 7px;
+    }
+    
 }
