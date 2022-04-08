@@ -73,11 +73,12 @@
         height: 20px;
         fill: $primary-white-color;
         transition: fill $transitio-duration $trasition-timing-function;
-    }
+    
         &--grey {
             fill: $icon-color;
             transition: fill $transitio-duration $trasition-timing-function;
         }
+    }
     &__item:hover &__icon {
         fill: $primary-white-color;
     }

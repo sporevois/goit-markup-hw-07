@@ -20,6 +20,7 @@
     align-items: center;
 }
 .site-nav {
+    @extend %list;
     margin-left: 93px;
 
     &__item {
@@ -63,8 +64,10 @@
 /* Contact */
 
 .contact {
+    
     align-items: center;
     margin-left: auto;
+    @extend %list;
   
     &__item + &__item {
     margin-left: 50px;

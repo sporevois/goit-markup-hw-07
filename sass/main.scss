@@ -1,2 +1,12 @@
-@import './utils/vars';
 @import './base/normalize';
+@import './utils/vars';
+@import './utils/placeholder';
+@import './components/general/body-styles';
+@import './components/general/header';
+@import './components/general/footer';
+@import './components/studio/hero';
+@import './components/studio/advantages';
+@import './components/studio/features';
+@import './components/studio/team';
+@import './components/studio/clients';
+@import './components/studio/modal-wind';
