@@ -1,7 +1,3 @@
-.section__container {
-        @extend %section__container;
-    }
-}
 .portfolio {
     @extend %list;
     box-sizing: border-box;
