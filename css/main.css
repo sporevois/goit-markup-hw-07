@@ -923,7 +923,6 @@ textarea:focus-visible {
 
 .image-thumb {
   width: 370px;
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -952,7 +951,6 @@ textarea:focus-visible {
   margin-bottom: 30px;
   margin-right: 30px;
   width: 370px;
-  height: 404px;
 }
 
 .portfolio__item:nth-child(3n) {
