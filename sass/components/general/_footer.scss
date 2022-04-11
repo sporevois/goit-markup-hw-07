@@ -8,6 +8,10 @@
     padding-bottom: 60px;
     background-color: $dark-bg-color;
   }
+.ftr-address-wrapper{
+    display: flex;
+    flex-direction: column;
+}
 // Logo
 .footer-logo {
     @extend %logo;
@@ -26,6 +30,7 @@
     margin-left: auto;
   }
 .location {
+    @extend %text;
     margin-bottom: 9px;
     font-style: normal;
     line-height: 1.71;
@@ -52,6 +57,7 @@
     margin-left: 70px;
   }
 .appeal {
+    @extend %text;
     margin-bottom: 20px;
     line-height: 1.17;
     font-weight: 700;

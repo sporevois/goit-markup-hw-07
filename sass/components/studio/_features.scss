@@ -28,8 +28,7 @@
       display: block;
     }
     &__text{
-      margin: 0;
-      padding: 0;
+      @extend %text;
     }
 }
 .feature-wrapper {
